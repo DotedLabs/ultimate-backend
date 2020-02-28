@@ -20,7 +20,7 @@ ULTIMATE BACKEND
 ## Description
 
 This should be the go to backend base for your next scalable project. This is a proof of concept project designed to be extremely slim and scalable, with distributed data request and process handling, built from the ground up for production use. It comes with Multi-Tenancy SaaS support, following different multi-tenancy database strategy as well as different resolver patterns
-to identify your tenants. The goal is to give your next big project that extra leap to awesomeness. To get started read the [Documentation](https://ultimate-backend.developerhub.io/)
+to identify your tenants. The goal is to give your next big project that extra leap to awesomeness. To get started read the instructions below
 
 ## Features
 
@@ -41,6 +41,7 @@ Software features
 *   ❌ (WiP) Documentation
 *   ❌ (WiP) Support for language translation
 *   ❌ Reactive health check for federated service and rebuilding gateway schema
+*   ❌ Service Discovery (Based on Consul)
 *   ✅ [React SSR Starter Kit](https://github.com/juicycleff/ultimate-backend-dashboard)
 
 ## Requirements
@@ -79,6 +80,7 @@ mongod
 
 If you have docker installed
 ```bash
+docker run -d -p 27017:27017 mongo
 docker run -d -p 1113:1113 -p 2113:2113 eventstore/eventstore
 docker run -d -p 6379:6379 redis
 ```
